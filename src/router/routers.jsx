@@ -91,7 +91,11 @@ const router = createBrowserRouter([
       element: <ServerError />,
     },
     */
-]);
+],
+  {
+    basename: "/Twwir/",
+  }
+);
 
 export default function AppRouter() {
   return <RouterProvider router={router} />;
