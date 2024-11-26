@@ -3,8 +3,6 @@ import shap1 from '../assets/images/decor/hero-3-shape3.png'
 import shap2 from '../assets/images/decor/hero-3-shape4.png'
 import shap3 from '../assets/images/decor/shape-5-2.png'
 import shap4 from '../assets/images/decor/shape-5-6.png'
-
-
 import main_home from '../assets/images/January_life_style_working_08-removebg-preview.png'
 import BouncingImage from '../components/atoms/BouncingImage'
 import SocialLinks from '../components/molecule/SocialLinks'
@@ -27,7 +25,6 @@ export default function Home() {
           >
             <img src={shap2} alt="decor" className='' />
           </BouncingImage>
-
           <BouncingImage
             animationType="rotate"
             duration={10}
@@ -36,7 +33,6 @@ export default function Home() {
           >
             <img src={shap3} alt="decor" className='' />
           </BouncingImage>
-
           <BouncingImage
             animationType="rotate"
             duration={10}
@@ -46,7 +42,6 @@ export default function Home() {
             <img src={shap4} alt="decor" className='' />
           </BouncingImage>
           <div className='max-w-[600px] xl:max-w-[700px] flex flex-col gap-10 slg:border-l slg:text-start text-center py-10 mt-10'>
-
             <p className='text-3xl lg:text-4xl xl:text-5xl font-bold xl:leading-[1.7] lg:leading-[1.5] leading-[1.5] xl:h-[150px] md:h-[100px] mobile:h-[140px] h-auto '>
               مع <span className='text-sec-color'>طوّر</span>، نحقق لك النجاح الرقمي في &nbsp;
               <TypeAnimationComp />
@@ -65,9 +60,6 @@ export default function Home() {
             </div>
           </div>
           <div className='  flex max-w-[700px] mx-auto justify-center items-center'>
-            <BouncingImage>
-
-            </BouncingImage>
             <BouncingImage
               animationType="bouncey"
               duration={5}
