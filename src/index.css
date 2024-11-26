@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Reem+Kufi:wght@400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-shadow{
+  box-shadow: inset 0px 0px 54px 33px rgba(11,71,71,1);
+}
+
+.active{
+  color: #f4a328;
+}
+
+.active:hover{
+  color: #cb7b03 !important; 
+}
+
+.curved-edge {
+  --c: 150px;
+  mask: radial-gradient(60% var(--c) at bottom,#0000 calc(100% - 10px),#ffffff);
+  background: #0B4747;
+}
