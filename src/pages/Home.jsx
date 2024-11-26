@@ -96,39 +96,39 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className='max-w-[1400px] mx-auto px-4 mt-20 text-white'>
+        <div className='max-w-[1400px] mx-auto px-4 mt-20 text-white overflow-hidden'>
           <div className='flex  flex-col items-center gap-10'>
             <p className='text-6xl font-black text-my-color'>خدماتنا <span className='text-sec-color'>المميزة</span></p>
             <p className='bg-teal-950 bg-opacity-80 w-fit px-5 py-1 rounded-xl text-white'>نقدم حلولًا مبتكرة تلبي احتياجاتك وتفوق توقعاتك.</p>
           </div>
-          <div className='grid grid-cols-3 gap-10 mt-20'>
-            <div className='relative main-div'>
-              <div className=' absolute flex w-full flex-col justify-around items-center p-6 bg-gradient-to-b from-teal-950 to-sky-600 h-[590px] rounded-2xl shadow-xl shadow-gray-400 hover:z-10 my-back-animation'>
+          <div className='grid 2md:grid-cols-2 xl:grid-cols-3 gap-y-20 gap-x-16 mt-20 '>
+            <div className='relative main-div flex justify-center'>
+              <div className=' absolute flex w-full flex-col justify-around items-center p-6 bg-gradient-to-b from-teal-950 to-sky-600 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 hover:z-10 my-back-animation'>
                 hi
               </div>
-              <div className='relative flex flex-col justify-around items-center p-6 bg-gradient-to-b from-teal-950 to-sky-600 h-[590px] rounded-2xl shadow-xl shadow-gray-400 my-animation'>
+              <div className='relative flex flex-col justify-around items-center p-6 bg-gradient-to-b from-teal-950 to-sky-600 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 my-animation'>
                 <img src={shap5} alt='' className=' absolute top-0 right-0' />
                 <p className='text-3xl font-bold'>التجارة الإلكترونية</p>
                 <img src={service3} alt='' className='w-2/3' />
                 <p className='text-center font-semibold'>نقدم خدمة تصميم وتطوير مواقع التجارة الإلكترونية المتكاملة التي تساعدك على عرض منتجاتك بسهولة وزيادة مبيعاتك عبر الإنترنت.</p>
               </div>
             </div>
-            <div className='relative main-div'>
-              <div className=' absolute flex w-full flex-col justify-around items-center p-6 bg-gradient-to-b from-orange-700 to-amber-500 h-[590px] rounded-2xl shadow-xl shadow-gray-400 hover:z-10 my-back-animation'>
+            <div className='relative main-div flex justify-center'>
+              <div className=' absolute flex w-full flex-col justify-around items-center p-6 bg-gradient-to-b from-orange-700 to-amber-500 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 hover:z-10 my-back-animation'>
                 hi
               </div>
-              <div className='relative flex flex-col justify-around items-center p-6 bg-gradient-to-b from-orange-700 to-amber-500 h-[590px] rounded-2xl shadow-xl shadow-gray-400 my-animation'>
+              <div className='relative flex flex-col justify-around items-center p-6 bg-gradient-to-b from-orange-700 to-amber-500 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 my-animation'>
                 <img src={shap5} alt='' className=' absolute top-0 right-0' />
                 <p className='text-3xl font-bold'>مشاريع تخرج </p>
                 <img src={service1} alt='' className='' />
                 <p className='text-center font-semibold'>نساعدك في تنفيذ مشروع التخرج باحترافية، مع شرح واضح لكل التفاصيل لضمان تميزك وفهمك الكامل.</p>
               </div>
             </div>
-            <div className='relative main-div'>
-              <div className=' absolute flex w-full flex-col justify-around items-center p-6 bg-gradient-to-b from-violet-900 to-blue-500 h-[590px] rounded-2xl shadow-xl shadow-gray-400 hover:z-10 my-back-animation'>
+            <div className='relative main-div flex justify-center'>
+              <div className=' absolute flex w-full flex-col justify-around items-center p-6 bg-gradient-to-b from-violet-900 to-blue-500 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 hover:z-10 my-back-animation'>
                 hi
               </div>
-              <div className='relative flex flex-col justify-around items-center p-6 bg-gradient-to-b from-violet-900 to-blue-500 h-[590px] rounded-2xl shadow-xl shadow-gray-400 my-animation'>
+              <div className='relative flex flex-col justify-around items-center p-6 bg-gradient-to-b from-violet-900 to-blue-500 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 my-animation'>
                 <img src={shap5} alt='' className=' absolute top-0 right-0' />
                 <p className='text-3xl font-bold'>نظم ادارة المشاريع</p>
                 <img src={service2} alt='' className='' />
