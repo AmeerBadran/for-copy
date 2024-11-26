@@ -1,7 +1,7 @@
-import skill1 from '../assets/images/ourSkils/icons-01.png'
-import skill2 from '../assets/images/ourSkils/icons-02.png'
-import skill3 from '../assets/images/ourSkils/icons-04.png'
-import skill4 from '../assets/images/ourSkils/icons-03.png'
+import skill1 from '../assets/images/ourSkills/icons-01.png'
+import skill2 from '../assets/images/ourSkills/icons-02.png'
+import skill3 from '../assets/images/ourSkills/icons-04.png'
+import skill4 from '../assets/images/ourSkills/icons-03.png'
 const featuresData = [
   {
     imgSrc: skill1,

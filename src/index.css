@@ -11,20 +11,46 @@ body {
   box-sizing: border-box;
 }
 
-.my-shadow{
-  box-shadow: inset 0px 0px 54px 33px rgba(11,71,71,1);
+.my-shadow {
+  box-shadow: inset 0px 0px 54px 33px rgba(11, 71, 71, 1);
 }
 
-.active{
+.active {
   color: #f4a328;
 }
 
-.active:hover{
-  color: #cb7b03 !important; 
+.active:hover {
+  color: #cb7b03 !important;
 }
 
 .curved-edge {
   --c: 150px;
-  mask: radial-gradient(60% var(--c) at bottom,#0000 calc(100% - 10px),#ffffff);
-  background: #0B4747;
+  mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 10px), #ffffff);
+
+}
+
+.main-div:hover .my-animation {
+  transform: translateY(20px) rotateX(calc(90deg - 10deg)) skewX(10deg);
+  opacity: 0.4;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+
+}
+
+.main-div:hover .my-back-animation {
+  transform: translateY(0px) rotateX(0) skewX(0deg);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 1;
+}
+
+.my-animation {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform-origin: bottom center;
+}
+
+.my-back-animation {
+  transform: translateY(20px) rotateX(calc(90deg - 10deg)) skewX(10deg);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform-origin: bottom center;
+  opacity: 0.4;
 }
