@@ -3,16 +3,17 @@ import shap1 from '../assets/images/decor/hero-3-shape3.png'
 import shap2 from '../assets/images/decor/hero-3-shape4.png'
 import shap3 from '../assets/images/decor/shape-5-2.png'
 import shap4 from '../assets/images/decor/shape-5-6.png'
-import shap5 from '../assets/images/decor/sun-shadow-right.png'
-import service1 from '../assets/images/ourSkills/02.png'
-import service2 from '../assets/images/ourSkills/03.png'
-import service3 from '../assets/images/ourSkills/Screenshot_2024-11-26_155755-removebg-preview.png'
+
+
 import main_home from '../assets/images/January_life_style_working_08-removebg-preview.png'
 import BouncingImage from '../components/atoms/BouncingImage'
 import SocialLinks from '../components/molecule/SocialLinks'
 import TypeAnimationComp from '../components/molecule/TypeAnimationComp'
 import featuresData from '../constants/features'
 import FeatureCard from '../components/molecule/FeatureCard'
+import ServicesCard from '../components/molecule/servicesCard'
+import { servicesCardData } from '../constants/servicesCardData'
+import ProjectsCard from '../components/molecule/ProjectsCard'
 export default function Home() {
   return (
     <div className='mx-auto min-h-screen'>
@@ -96,46 +97,29 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className='max-w-[1400px] mx-auto px-4 mt-20 text-white overflow-hidden'>
+        <div className='max-w-[1400px] mx-auto px-4 mt-20 text-white overflow-hidden 2md:overflow-visible pb-12'>
           <div className='flex  flex-col items-center gap-10'>
             <p className='text-6xl font-black text-my-color'>خدماتنا <span className='text-sec-color'>المميزة</span></p>
-            <p className='bg-teal-950 bg-opacity-80 w-fit px-5 py-1 rounded-xl text-white'>نقدم حلولًا مبتكرة تلبي احتياجاتك وتفوق توقعاتك.</p>
+            <p className='bg-teal-950 bg-opacity-80 w-fit px-5 py-1 rounded-xl'>نقدم حلولًا مبتكرة تلبي احتياجاتك وتفوق توقعاتك.</p>
           </div>
-          <div className='grid 2md:grid-cols-2 xl:grid-cols-3 gap-y-20 gap-x-16 mt-20 '>
-            <div className='relative main-div flex justify-center'>
-              <div className=' absolute flex w-full flex-col justify-around items-center p-6 bg-gradient-to-b from-teal-950 to-sky-600 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 hover:z-10 my-back-animation'>
-                hi
-              </div>
-              <div className='relative flex flex-col justify-around items-center p-6 bg-gradient-to-b from-teal-950 to-sky-600 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 my-animation'>
-                <img src={shap5} alt='' className=' absolute top-0 right-0' />
-                <p className='text-3xl font-bold'>التجارة الإلكترونية</p>
-                <img src={service3} alt='' className='w-2/3' />
-                <p className='text-center font-semibold'>نقدم خدمة تصميم وتطوير مواقع التجارة الإلكترونية المتكاملة التي تساعدك على عرض منتجاتك بسهولة وزيادة مبيعاتك عبر الإنترنت.</p>
-              </div>
-            </div>
-            <div className='relative main-div flex justify-center'>
-              <div className=' absolute flex w-full flex-col justify-around items-center p-6 bg-gradient-to-b from-orange-700 to-amber-500 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 hover:z-10 my-back-animation'>
-                hi
-              </div>
-              <div className='relative flex flex-col justify-around items-center p-6 bg-gradient-to-b from-orange-700 to-amber-500 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 my-animation'>
-                <img src={shap5} alt='' className=' absolute top-0 right-0' />
-                <p className='text-3xl font-bold'>مشاريع تخرج </p>
-                <img src={service1} alt='' className='' />
-                <p className='text-center font-semibold'>نساعدك في تنفيذ مشروع التخرج باحترافية، مع شرح واضح لكل التفاصيل لضمان تميزك وفهمك الكامل.</p>
-              </div>
-            </div>
-            <div className='relative main-div flex justify-center'>
-              <div className=' absolute flex w-full flex-col justify-around items-center p-6 bg-gradient-to-b from-violet-900 to-blue-500 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 hover:z-10 my-back-animation'>
-                hi
-              </div>
-              <div className='relative flex flex-col justify-around items-center p-6 bg-gradient-to-b from-violet-900 to-blue-500 h-[590px] max-w-[500px] rounded-2xl shadow-xl shadow-gray-400 my-animation'>
-                <img src={shap5} alt='' className=' absolute top-0 right-0' />
-                <p className='text-3xl font-bold'>نظم ادارة المشاريع</p>
-                <img src={service2} alt='' className='' />
-                <p className='text-center font-semibold'>نحن نقدم لك حلاً متكاملاً لإدارة مشاريعك بفعالية، من خلال أدوات مبتكرة تضمن تنظيم المهام وتعزيز التعاون لتحقيق النجاح.</p>
-              </div>
-            </div>
+          <div className="grid 2md:grid-cols-2 xl:grid-cols-3 gap-y-20 gap-x-16 mt-20">
+            {servicesCardData.map((data) => (
+              <ServicesCard key={data.id} {...data} />
+            ))}
           </div>
+        </div>
+      </section>
+      <section className='py-24 bg-gradient-to-t from-gray-100 from-90% to-white'>
+        <div>
+
+        </div>
+        <div className='max-w-[1400px] xl:mx-auto grid 2md:grid-cols-2 xl:grid-cols-3 gap-x-20 gap-y-28 px-4 mt-20 text-white pr-14'>
+          <ProjectsCard />
+          <ProjectsCard />
+          <ProjectsCard />
+          <ProjectsCard />
+          <ProjectsCard />
+          <ProjectsCard />
         </div>
       </section>
     </div>
