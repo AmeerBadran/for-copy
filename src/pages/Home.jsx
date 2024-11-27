@@ -9,7 +9,7 @@ import SocialLinks from '../components/molecule/SocialLinks'
 import TypeAnimationComp from '../components/molecule/TypeAnimationComp'
 import featuresData from '../constants/features'
 import FeatureCard from '../components/molecule/FeatureCard'
-import ServicesCard from '../components/molecule/servicesCard'
+import ServicesCard from '../components/molecule/ServicesCard'
 import { servicesCardData } from '../constants/servicesCardData'
 import ProjectsCard from '../components/molecule/ProjectsCard'
 export default function Home() {
