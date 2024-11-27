@@ -12,6 +12,8 @@ import FeatureCard from '../components/molecule/FeatureCard'
 import ServicesCard from '../components/molecule/ServicesCard'
 import { servicesCardData } from '../constants/servicesCardData'
 import ProjectsCard from '../components/molecule/ProjectsCard'
+import { projectsData } from '../constants/projectsData'
+import { FaWhatsapp } from "react-icons/fa";
 export default function Home() {
   return (
     <div className='mx-auto min-h-screen'>
@@ -76,7 +78,7 @@ export default function Home() {
       </section>
       <section className='relative mb-20'>
         <div className='curved-edge absolute -z-10 w-full h-[70%] max-h-96 bg-my-color'></div>
-        <div className='max-w-[1400px] mx-auto px-4 mobile:px-10 md:px-20 py-24'>
+        <div className='max-w-[1400px] mx-auto px-4 2xmobile:px-10 md:px-20 py-24'>
           <div className='grid  2md:grid-cols-2 xl:grid-cols-4 rounded-xl bg-teal-600 w-full text-white'>
             {featuresData.map((feature, index) => (
               <FeatureCard
@@ -89,10 +91,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className='max-w-[1400px] mx-auto px-4 mt-20 text-white overflow-hidden 2md:overflow-visible pb-12'>
+        <div className='max-w-[1400px] mx-auto px-4 mt-20 text-white overflow-x-hidden pb-12'>
           <div className='flex  flex-col items-center gap-10'>
-            <p className='text-6xl font-black text-my-color'>خدماتنا <span className='text-sec-color'>المميزة</span></p>
-            <p className='bg-teal-950 bg-opacity-80 w-fit px-5 py-1 rounded-xl'>نقدم حلولًا مبتكرة تلبي احتياجاتك وتفوق توقعاتك.</p>
+            <p className='text-4xl md:text-[54px] lg:text-6xl font-black text-my-color text-shadow'>خدماتنا <span className='text-sec-color'>المميزة</span></p>
+            <p className='bg-teal-950 bg-opacity-80 w-fit px-5 py-1 text-center rounded-xl'>نقدم حلولًا مبتكرة تلبي احتياجاتك وتفوق توقعاتك.</p>
           </div>
           <div className="grid 2md:grid-cols-2 xl:grid-cols-3 gap-y-20 gap-x-16 mt-20">
             {servicesCardData.map((data) => (
@@ -102,16 +104,34 @@ export default function Home() {
         </div>
       </section>
       <section className='py-24 bg-gradient-to-t from-gray-100 from-90% to-white'>
-        <div>
-
+        <div className='flex flex-col items-center gap-10'>
+          <p className='text-4xl md:text-[54px] lg:text-6xl font-black text-my-color text-shadow'>معرض <span className='text-sec-color'>المشاريع</span></p>
         </div>
-        <div className='max-w-[1400px] xl:mx-auto grid 2md:grid-cols-2 xl:grid-cols-3 gap-x-20 gap-y-28 px-4 mt-20 text-white pr-14'>
-          <ProjectsCard />
-          <ProjectsCard />
-          <ProjectsCard />
-          <ProjectsCard />
-          <ProjectsCard />
-          <ProjectsCard />
+        <div className='max-w-[1400px] xl:mx-auto grid 2md:grid-cols-2 xl:grid-cols-3 gap-x-20 gap-y-28 px-4 mt-24 text-white pr-14'>
+          {projectsData.map((project) => (
+            <ProjectsCard key={project.id} {...project} />
+          ))}
+        </div>
+      </section>
+      <section className="relative w-full h-[500px] mb-20 bg-teal-950 bg-contactbg bg-cover bg-center bg-no-repeat">
+        <div className="absolute inset-0 bg-my-color bg-opacity-40"></div>
+        <div className='max-w-[1400px] h-full mx-auto grid grid-cols-2 p-4 2md:p-10'>
+          <div className="text-white z-10 flex flex-col justify-center h-full">
+            <p className="text-xl font-semibold mb-14">ابدأ تواجدك الرقمي اليوم!</p>
+            <p className="text-3xl font-bold mb-4">اطلب موقعك الآن!</p>
+            <p className="text-3xl font-bold text-right tracking-wider" dir="ltr">(+972)569597622</p>
+
+            <a href='https://api.whatsapp.com/send/?phone=972569697622&text&type=phone_number&app_absent=0' target='_blanck' className="flex items-center justify-center w-fit gap-3 h-16 bg-teal-600 hover:bg-teal-800 transition duration-300 ease-in-out rounded-lg mt-10 px-5 shadow-lg">
+              <FaWhatsapp className="text-3xl mr-3 text-white" />
+              <span className="text-lg font-medium text-white">تواصل عبر واتساب</span>
+            </a>
+          </div>
+          <div className='flex h-full w-full justify-center items-center'>
+            <button>
+              
+            </button>
+            <p></p>
+          </div>
         </div>
       </section>
     </div>

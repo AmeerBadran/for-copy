@@ -11,6 +11,7 @@ export default {
     extend: {
       backgroundImage: {
         'home': "URL('./src/assets/images/home-bg.jpg')",
+        'contactbg':"URL('./src/assets/images/contactbg.png')"
       },
       boxShadow: {
         'inner-shadow': 'inset 0px 0px 24px 13px rgba(50,255,255,0.3)',

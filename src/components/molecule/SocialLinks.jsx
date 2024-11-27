@@ -2,7 +2,7 @@ import { FaFacebook } from 'react-icons/fa';
 import { GrInstagram } from "react-icons/gr";
 const SocialLinks = () => {
   return (
-    <div className="flex 2md:ml-6 ml-3 2md:gap-5 gap-2 items-center border-t w-1/2 p-5">
+    <div className="flex gap-5 items-center border-t w-1/2 p-5">
       <a href="" target="_blank" rel="noopener noreferrer" className="text-white hover:text-rose-600 transition-all duration-500">
         <GrInstagram className="text-2xl" />
       </a>

@@ -19,8 +19,23 @@ body {
   color: #f4a328;
 }
 
+.text-shadow {
+  text-shadow: -5px -5px 0 rgba(65, 65, 65, 0.247);
+}
+
 .active:hover {
   color: #cb7b03 !important;
+}
+
+.section-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* لون مع شفافية */
+  z-index: 1;
 }
 
 .curved-edge {
