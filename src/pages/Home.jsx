@@ -66,7 +66,6 @@ export default function Home() {
               easing="easeInOut"
               className=""
             >
-              
               <div className="relative rounded-[100px] z-10 w-11/12 aspect-square slg:size-[350px] lg:size-[450px] sxl:size-[500px] xl:size-[590px] shadow-out-shadow overflow-hidden flex justify-center items-center">
                 <img src={main_home} alt="main_home" className="m-7 size-full" />
                 <div className="shadow-inner-shadow rounded-[100px] absolute w-full h-full border-[10px] border-[#cce6e6]"></div>
