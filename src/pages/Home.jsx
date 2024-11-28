@@ -3,6 +3,12 @@ import shap1 from '../assets/images/decor/hero-3-shape3.png'
 import shap2 from '../assets/images/decor/hero-3-shape4.png'
 import shap3 from '../assets/images/decor/shape-5-2.png'
 import shap4 from '../assets/images/decor/shape-5-6.png'
+import shap5 from '../assets/images/decor/shape-1-2.png'
+import shap6 from '../assets/images/decor/shape-1-1.png'
+import shap7 from '../assets/images/decor/shape-1-3.png'
+import shap8 from '../assets/images/decor/shape-1-4.png'
+import shap9 from '../assets/images/decor/shape-1-5.png'
+import shap10 from '../assets/images/decor/shape-2-1.png'
 import main_home from '../assets/images/January_life_style_working_08-removebg-preview.png'
 import BouncingImage from '../components/atoms/BouncingImage'
 import SocialLinks from '../components/molecule/SocialLinks'
@@ -14,6 +20,9 @@ import { servicesCardData } from '../constants/servicesCardData'
 import ProjectsCard from '../components/molecule/ProjectsCard'
 import { projectsData } from '../constants/projectsData'
 import { FaWhatsapp } from "react-icons/fa";
+import { TbTriangleFilled } from "react-icons/tb";
+import Footer from '../components/molecule/Footer'
+
 export default function Home() {
   return (
     <div className='mx-auto min-h-screen'>
@@ -113,9 +122,36 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="relative w-full h-[500px] mb-20 bg-teal-950 bg-contactbg bg-cover bg-center bg-no-repeat">
+      <section className="relative w-full h-[500px] bg-teal-950 bg-contactbg bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-my-color bg-opacity-40"></div>
-        <div className='max-w-[1400px] h-full mx-auto grid grid-cols-2 p-4 2md:p-10'>
+        <img src={shap5} alt='' className=' absolute top-0 right-0 z-10' />
+        <img src={shap6} alt='' className=' absolute top-0 right-0' />
+        <img src={shap10} alt='' className=' absolute bottom-0 left-0 max-w-96' />
+        <BouncingImage
+          animationType="rotate"
+          duration={10}
+          easing="linear"
+          className="absolute left-44 top-20 hidden slg:block"
+        >
+          <img src={shap7} alt="decor" className='' />
+        </BouncingImage>
+        <BouncingImage
+          animationType="rotate"
+          duration={10}
+          easing="linear"
+          className="absolute right-1/3 bottom-20 hidden slg:block"
+        >
+          <img src={shap8} alt="decor" className='' />
+        </BouncingImage>
+        <BouncingImage
+          animationType="bouncex"
+          duration={3}
+          easing="linear"
+          className="absolute w-32 left-1/3 top-28 "
+        >
+          <img src={shap9} alt="decor" className='rotate-180' />
+        </BouncingImage>
+        <div className='max-w-[1400px] h-full mx-auto grid 2md:grid-cols-2 p-4 2md:p-10'>
           <div className="text-white z-10 flex flex-col justify-center h-full">
             <p className="text-xl font-semibold mb-14">ابدأ تواجدك الرقمي اليوم!</p>
             <p className="text-3xl font-bold mb-4">اطلب موقعك الآن!</p>
@@ -126,14 +162,15 @@ export default function Home() {
               <span className="text-lg font-medium text-white">تواصل عبر واتساب</span>
             </a>
           </div>
-          <div className='flex h-full w-full justify-center items-center'>
-            <button>
-              
+          <div className='flex h-full w-full 2md:justify-end 2md:pl-20 items-center'>
+            <button className='size-32 relative bg-white rounded-full z-10 shadow-out-shadow hover:bg-my-color hover:shadow-2xl hover:shadow-black group transition-all duration-300'>
+              <TbTriangleFilled className=' rotate-90 text-4xl text-my-color group-hover:text-white absolute top-[47px] right-[45px] transition-all duration-300' />
             </button>
             <p></p>
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }
