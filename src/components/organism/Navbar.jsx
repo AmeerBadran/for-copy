@@ -33,9 +33,9 @@ function Navbar() {
   };
 
   return (
-      <div className="w-full absolute z-50 border-b shadow-xl ">
+      <div className="w-full absolute z-50 border-b shadow-xl bg-my-color">
         <header
-          className={` max-w-[1400px] mx-auto flex items-center justify-between  ${isHalfScreen ? "h-24" : "h-20"} px-4 relative`}>
+          className={` max-w-[1400px] mx-auto flex items-center justify-between h-24 px-4 relative`}>
           <Link to="/" className="flex items-center gap-3">
             <img src={mainLogo} alt="Logo" className="h-16" />
             <p className="text-white font-bold text-2xl">طوّر</p>
