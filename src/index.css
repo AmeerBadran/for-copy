@@ -69,3 +69,17 @@ body {
   transform-origin: bottom center;
   opacity: 0.4;
 }
+
+.card-animation {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 1.4s ease;
+}
+.card-animation:hover {
+  transform: rotateY(180deg);
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}

@@ -12,7 +12,11 @@ export default {
       backgroundImage: {
         'home': "URL('./src/assets/images/home-bg.jpg')",
         'contactbg':"URL('./src/assets/images/contactbg.png')",
-        'aboutbg':"URL('./src/assets/images/aboutbg.png')"
+        'aboutbg':"URL('./src/assets/images/aboutbg.png')",
+        'req':"URL('./src/assets/images/bgs/12944-NOMX20.jpg')",
+        'dev':"URL('./src/assets/images/bgs/3964906.jpg')",
+        'des':"URL('./src/assets/images/bgs/331917-P9V46S-888.jpg')",
+        'lunch':"URL('./src/assets/images/bgs/3054479.jpg')",
       },
       boxShadow: {
         'inner-shadow': 'inset 0px 0px 24px 13px rgba(50,255,255,0.3)',

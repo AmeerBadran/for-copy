@@ -6,6 +6,7 @@ import {
 import RootLayout from "../components/HOC/RootLayout";
 import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
+import Contact from "../pages/Contact";
 //import PersistLogin from "../components/HOC/PersistLogin";
 //import NotProtectdRoute from "../components/HOC/withNotProtect"
 //import ProtectdRoute from "../components/HOC/withProtect"
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/aboutUs',
         element: (<AboutUs />)
+      },
+      {
+        path:"/contactUs",
+        element:(<Contact/>)
       }
     ],
   },
