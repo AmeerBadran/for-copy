@@ -13,7 +13,7 @@ export default {
         'home': "url('./assets/images/home-bg.jpg')",
         'contactbg': "url('./assets/images/contactbg.png')",
         'aboutbg': "url('./assets/images/aboutbg.png')",
-        'req': "url('./assets/images/bgs/12944-nomx20.jpg')",
+        'req': "url('./public/assets/images/bgs/12944-nomx20.jpg')",
         'dev': "url('./assets/images/bgs/3964906.jpg')",
         'des': "url('./assets/images/bgs/331917-P9V46S-888.jpg')",
         'lunch': "url('./assets/images/bgs/3054479.jpg')",
