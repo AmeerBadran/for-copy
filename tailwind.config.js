@@ -1,11 +1,11 @@
-
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 
 export default {
-
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./public/**/*.{html,js}"
   ],
   theme: {
     extend: {
@@ -42,6 +42,9 @@ export default {
       'xl': '1300px',
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio')
+  ],
 }
-
