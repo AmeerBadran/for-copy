@@ -10,13 +10,13 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'home': "url('./src/assets/images/home-bg.jpg')",
-        'contactbg': "url('./src/assets/images/contactbg.png')",
-        'aboutbg': "url('./src/assets/images/aboutbg.png')",
-        'req': "url('./src/assets/images/bgs/12944-nomx20.jpg')",
-        'dev': "url('./src/assets/images/bgs/3964906.jpg')",
-        'des': "url('./src/assets/images/bgs/331917-p9v46s-888.jpg')",
-        'lunch': "url('./src/assets/images/bgs/3054479.jpg')",
+        'home': "url('/assets/images/home-bg.jpg')",
+        'contactbg': "url('/assets/images/contactbg.png')",
+        'aboutbg': "url('/assets/images/aboutbg.png')",
+        'req': "url('/assets/images/bgs/12944-nomx20.jpg')",
+        'dev': "url('/assets/images/bgs/3964906.jpg')",
+        'des': "url('/assets/images/bgs/331917-p9v46s-888.jpg')",
+        'lunch': "url('/assets/images/bgs/3054479.jpg')",
       },
       boxShadow: {
         'inner-shadow': 'inset 0px 0px 24px 13px rgba(50,255,255,0.3)',
