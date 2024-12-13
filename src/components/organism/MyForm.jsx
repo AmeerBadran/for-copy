@@ -44,8 +44,8 @@ const MyForm = () => {
         </div>
 
         <div>
-          <label htmlFor="email" className="font-semibold text-my-color flex items-center gap-2">
-            اللإيميل <p className='text-sm'>(عليك ادخال ايميلك الصحيح حتى نستطيع الرد على هذه الرسالة)</p>
+          <label htmlFor="email" className="font-semibold text-my-color items-center gap-2">
+            اللإيميل <p className='text-xs lg:text-sm'>(عليك ادخال ايميلك الصحيح حتى نستطيع الرد على هذه الرسالة)</p>
           </label>
           <input
             id="email"

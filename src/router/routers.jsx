@@ -5,8 +5,6 @@ import {
 
 import RootLayout from "../components/HOC/RootLayout";
 import Home from "../pages/Home";
-import AboutUs from "../pages/AboutUs";
-import Contact from "../pages/Contact";
 
 // const router = createBrowserRouter([
 //   {
@@ -39,8 +37,6 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { index: true, element: <Home /> },
-      { path: "/aboutUs", element: <AboutUs /> },
-      { path: "/contactUs", element: <Contact /> },
     ],
   },
 ]);
